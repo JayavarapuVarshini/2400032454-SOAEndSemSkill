@@ -1,0 +1,17 @@
+description: Consumer expects GET endpoint to return mz and addition values
+name: get_endpoint_contract
+
+# Step 1: request structure
+request:
+  method: GET
+  urlPath: /get
+  queryParameters:
+    a: s
+    b: "10"
+
+# Step 3: response spec
+response:
+  status: 200
+  headers:
+    Content-Type: text/plain;charset=UTF-8
+  body: "mz='1.1' addition=15"

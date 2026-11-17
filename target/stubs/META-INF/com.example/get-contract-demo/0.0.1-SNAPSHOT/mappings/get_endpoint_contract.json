@@ -1,0 +1,24 @@
+{
+  "id" : "f7e1330e-976f-45e5-aac5-971518f56182",
+  "request" : {
+    "urlPath" : "/get",
+    "method" : "GET",
+    "queryParameters" : {
+      "a" : {
+        "equalTo" : "s"
+      },
+      "b" : {
+        "equalTo" : "10"
+      }
+    }
+  },
+  "response" : {
+    "status" : 200,
+    "body" : "mz='1.1' addition=15",
+    "headers" : {
+      "Content-Type" : "text/plain;charset=UTF-8"
+    },
+    "transformers" : [ "response-template", "spring-cloud-contract" ]
+  },
+  "uuid" : "f7e1330e-976f-45e5-aac5-971518f56182"
+}
